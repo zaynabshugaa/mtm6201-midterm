@@ -35,6 +35,8 @@ p { font-size: 1rem; }
     font-size: 0.9rem;
     letter-spacing: 1px;
 }
+/* END of Header Styling */
+
 
 /* Hero Section */
 .hero {
@@ -72,4 +74,72 @@ p { font-size: 1rem; }
 
 .btn:hover {
     background-color: #e0e0e0;
+}
+
+/* END of Hero Section */
+
+
+/* Page Background */
+body {
+    background-color: #f3f0e9;
+}
+
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+}
+
+/* Typography Overrides & Colors */
+h2 { font-family: 'Lato', sans-serif; font-size: 3.052rem; color: #000; line-height: 1.1; margin-bottom: 2rem; }
+h3 { font-family: 'Lato', sans-serif; font-size: 1.953rem; color: #000; margin: 1rem 0; }
+.overline { color: #d69e3d; font-weight: 700; letter-spacing: 1px; font-size: 0.9rem; margin-bottom: 0.5rem; }
+
+/* Intro Gallery Layout */
+.intro-gallery {
+    margin-bottom: 6rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.side-imgs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+/* Features Section */
+.features {
+    text-align: center;
+}
+
+.features-header {
+    margin-bottom: 4rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+}
+
+.feature-item img {
+    width: 120px; /* Adjust based on your SVG size */
+    margin-bottom: 1rem;
+}
+
+.feature-item p {
+    color: #333;
+    max-width: 350px;
+    margin: 0 auto;
 }
