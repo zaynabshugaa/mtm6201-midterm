@@ -1,3 +1,29 @@
+/* --- TYPE SETTING FOR DIFF SIZES --- */
+
+/* 1. MOBILE SIZES */
+h1 { font-size: 2.027rem; line-height: 1.1; }
+h2 { font-size: 1.802rem; line-height: 1.2; }
+h3 { font-size: 1.424rem; line-height: 1.3; }
+p  { font-size: 1rem;     line-height: 1.6; }
+
+/* 2. TABLET SIZES (Screens wider than 768px) */
+@media (min-width: 768px) {
+    h1 { font-size: 2.986rem; }
+    h2 { font-size: 2.488rem; }
+    h3 { font-size: 1.728rem; }
+}
+
+/* 3. DESKTOP SIZES (Screens wider than 1024px) */
+@media (min-width: 1024px) {
+    h1 { font-size: 3.815rem; }
+    h2 { font-size: 3.052rem; }
+    h3 { font-size: 1.953rem; }
+}
+
+
+
+
+
 /* General Reset */
 * {
     margin: 0;
@@ -375,3 +401,39 @@ h3 { font-family: 'Lato', sans-serif; font-size: 1.953rem; color: #000; margin: 
 }
 /* Footer Styling END */
 
+
+
+
+/* --- LAYOUT SIZES FOR SCREENS --- */
+
+@media (max-width: 767px) {
+    /* Stack the Gallery */
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Stack the Features (Fair Trade, etc) */
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    .feature-item:nth-child(3) {
+        grid-column: auto; /* Reset the centering trick for mobile */
+    }
+
+    /* Stack the "Our Shop" section */
+    .shop-container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    /* Stack the "About Story" section */
+    .story-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Stack the Testimonials */
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+}
