@@ -229,3 +229,61 @@ h3 { font-family: 'Lato', sans-serif; font-size: 1.953rem; color: #000; margin: 
 /* Hover effects */
 .btn-solid:hover { background-color: #d69e3d; color: #fff; }
 .btn-outline:hover { background-color: #fff; color: #000; }
+
+
+
+/* About Story Section */
+.about-story {
+    background-color: #f3f0e9; /* Matching the page background */
+    padding: 6rem 1.5rem;
+}
+
+.story-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center; /* Vertically centers text next to image */
+    gap: 4rem;
+}
+
+.story-image {
+    flex: 1;
+}
+
+.story-image img {
+    width: 100%;
+    display: block;
+    /* Optional: adds a slight shadow if you like that look */
+    /* box-shadow: 10px 10px 0px #d69e3d; */ 
+}
+
+.story-content {
+    flex: 1;
+}
+
+.story-content h2 {
+    margin-bottom: 1.5rem;
+}
+
+.story-content p {
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+/* Black Button Variant */
+.btn-black {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.btn-black:hover {
+    background-color: #d69e3d;
+}
+
+/* THIS ENDS About Story Section */
