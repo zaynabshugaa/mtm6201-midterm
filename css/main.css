@@ -40,7 +40,7 @@ p { font-size: 1rem; }
 .hero {
     height: 80vh; /* Adjust height as needed */
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                url('../hero-background.jpg') no-repeat center center/cover;
+            url('../images/hero-background.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
