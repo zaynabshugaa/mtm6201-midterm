@@ -83,6 +83,8 @@ p { font-size: 1rem; }
 body {
     background-color: #f3f0e9;
 }
+/* Page Background */
+
 
 .content-wrapper {
     max-width: 1200px;
@@ -90,12 +92,15 @@ body {
     padding: 4rem 1.5rem;
 }
 
-/* Typography Overrides & Colors */
+/* Typography Overrides & Colours */
 h2 { font-family: 'Lato', sans-serif; font-size: 3.052rem; color: #000; line-height: 1.1; margin-bottom: 2rem; }
 h3 { font-family: 'Lato', sans-serif; font-size: 1.953rem; color: #000; margin: 1rem 0; }
 .overline { color: #d69e3d; font-weight: 700; letter-spacing: 1px; font-size: 0.9rem; margin-bottom: 0.5rem; }
+/* Typography Overrides & Colours */
 
-/* Intro Gallery Layout */
+
+
+/* Intro Gallery Layout - The Safari "Aspect-Ratio" Fix */
 .intro-gallery {
     margin-bottom: 6rem;
 }
@@ -104,12 +109,15 @@ h3 { font-family: 'Lato', sans-serif; font-size: 1.953rem; color: #000; margin: 
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
+    align-items: start; /* Prevents stretching issues */
 }
 
-.gallery-grid img {
+/* This targets the big image on the left */
+.main-img img {
     width: 100%;
-    height: 100%;
+    aspect-ratio: 1 / 1.2; /* Makes it a tall rectangle to match the design */
     object-fit: cover;
+    display: block;
 }
 
 .side-imgs {
@@ -118,7 +126,15 @@ h3 { font-family: 'Lato', sans-serif; font-size: 1.953rem; color: #000; margin: 
     gap: 1.5rem;
 }
 
-/* Features Section */
+/* This targets the 4 smaller images on the right */
+.side-imgs img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Makes them perfect squares */
+    object-fit: cover;
+    display: block;
+}
+
+/* Features Section - 2 on top, 1 centered on bottom */
 .features {
     text-align: center;
 }
@@ -129,8 +145,21 @@ h3 { font-family: 'Lato', sans-serif; font-size: 1.953rem; color: #000; margin: 
 
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 3rem;
+    grid-template-columns: 1fr 1fr; /* Forces exactly 2 columns */
+    gap: 4rem 2rem; /* Adds more vertical space between the rows */
+    justify-items: center;
+}
+
+/* This targets the 3rd feature ("Made with Love") */
+.feature-item:nth-child(3) {
+    grid-column: 1 / span 2; /* Tells it to span across both columns */
+    max-width: 400px;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .feature-item img {
