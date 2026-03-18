@@ -24,7 +24,7 @@ p  { font-size: 1rem;     line-height: 1.6; }
 
 
 
-/* General Reset */
+/* General stuff */
 * {
     margin: 0;
     padding: 0;
@@ -66,7 +66,7 @@ p { font-size: 1rem; }
 
 /* Hero Section */
 .hero {
-    height: 80vh; /* Adjust height as needed */
+    height: 80vh; /* height adjustments */
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
             url('../images/hero-background.jpg') no-repeat center center/cover;
     display: flex;
@@ -126,7 +126,7 @@ h3 { font-family: 'Lato', sans-serif; font-size: 1.953rem; color: #000; margin: 
 
 
 
-/* Intro Gallery Layout - The Safari Fix */
+/* intro gallery layout and the safari fix */
 .intro-gallery {
     margin-bottom: 6rem;
 }
@@ -135,7 +135,7 @@ h3 { font-family: 'Lato', sans-serif; font-size: 1.953rem; color: #000; margin: 
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
-    align-items: start; /* Prevents stretching issues */
+    align-items: start; /* prevents stretching issues */
 }
 
 /* This targets the big image on the left */
@@ -152,7 +152,7 @@ h3 { font-family: 'Lato', sans-serif; font-size: 1.953rem; color: #000; margin: 
     gap: 1.5rem;
 }
 
-/* This targets the 4 smaller images on the right */
+/* This is for the 4 smaller images on the right */
 .side-imgs img {
     width: 100%;
     aspect-ratio: 1 / 1; /* Makes them perfect squares */
@@ -171,12 +171,12 @@ h3 { font-family: 'Lato', sans-serif; font-size: 1.953rem; color: #000; margin: 
 
 .features-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Forces exactly 2 columns */
+    grid-template-columns: 1fr 1fr; /* makes 2 columns */
     gap: 4rem 2rem; /* Adds more vertical space between the rows */
     justify-items: center;
 }
 
-/* This targets the 3rd feature ("Made with Love") */
+/* This targets the third one (made with Love) */
 .feature-item:nth-child(3) {
     grid-column: 1 / span 2; /* Tells it to span across both columns */
     max-width: 400px;
@@ -189,7 +189,7 @@ h3 { font-family: 'Lato', sans-serif; font-size: 1.953rem; color: #000; margin: 
 }
 
 .feature-item img {
-    width: 120px; /* Adjust based on your SVG size */
+    width: 120px; /* for the SVG size */
     margin-bottom: 1rem;
 }
 
@@ -205,7 +205,7 @@ h3 { font-family: 'Lato', sans-serif; font-size: 1.953rem; color: #000; margin: 
 .our-shop {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
                 url('../images/coffee-shop.jpeg') no-repeat center center/cover;
-    padding: 10rem 2rem; /* Adds plenty of height to the section */
+    padding: 10rem 2rem; /* adds height for the section */
     color: #fff;
     text-align: center;
 }
@@ -224,13 +224,13 @@ h3 { font-family: 'Lato', sans-serif; font-size: 1.953rem; color: #000; margin: 
 }
 
 .shop-box h2 {
-    color: #fff; /* Overriding the black h2 from the previous section */
+    color: #fff; /* overriding the black h2 from the other section */
     font-size: 3.052rem;
     margin-bottom: 2.5rem;
     line-height: 1.1;
 }
 
-/* Button Variants */
+/* Button types */
 .btn-solid {
     display: inline-block;
     background-color: #fff;
@@ -260,7 +260,7 @@ h3 { font-family: 'Lato', sans-serif; font-size: 1.953rem; color: #000; margin: 
 
 /* About Story Section */
 .about-story {
-    background-color: #f3f0e9; /* Matching the page background */
+    background-color: #f3f0e9; /* so i can match the page background */
     padding: 6rem 1.5rem;
 }
 
@@ -268,7 +268,7 @@ h3 { font-family: 'Lato', sans-serif; font-size: 1.953rem; color: #000; margin: 
     max-width: 1100px;
     margin: 0 auto;
     display: flex;
-    align-items: center; /* Vertically centers text next to image */
+    align-items: center; /* centers text next to image */
     gap: 4rem;
 }
 
@@ -279,8 +279,6 @@ h3 { font-family: 'Lato', sans-serif; font-size: 1.953rem; color: #000; margin: 
 .story-image img {
     width: 100%;
     display: block;
-    /* Optional: adds a slight shadow if you like that look */
-    /* box-shadow: 10px 10px 0px #d69e3d; */ 
 }
 
 .story-content {
@@ -296,7 +294,7 @@ h3 { font-family: 'Lato', sans-serif; font-size: 1.953rem; color: #000; margin: 
     color: #333;
 }
 
-/* Black Button Variant */
+/* Black Button */
 .btn-black {
     display: inline-block;
     background-color: #000;
@@ -312,10 +310,10 @@ h3 { font-family: 'Lato', sans-serif; font-size: 1.953rem; color: #000; margin: 
     background-color: #d69e3d;
 }
 
-/* Specific color for the About Us overline */
+/* Specific colour for the About Us */
 .about-story .overline {
     color: #d69e3d;
-    display: block; /* Ensures it sits on its own line above the H2 */
+    display: block; /* makes sure it sits on its own line above the H2 */
     margin-bottom: 0.5rem;
     font-weight: 700;
     letter-spacing: 1px;
@@ -412,12 +410,12 @@ h3 { font-family: 'Lato', sans-serif; font-size: 1.953rem; color: #000; margin: 
         grid-template-columns: 1fr;
     }
     
-    /* Stack the Features (Fair Trade, etc) */
+    /* Stack the features section (Fair Trade, etc) */
     .features-grid {
         grid-template-columns: 1fr;
     }
     .feature-item:nth-child(3) {
-        grid-column: auto; /* Reset the centering trick for mobile */
+        grid-column: auto; /* Reset the centering for phone */
     }
 
     /* Stack the "Our Shop" section */
